@@ -35,14 +35,18 @@
       width: 100%;
       outline: none;
       padding-left: 10px;
-      background: rgb(255, 220, 220);
+      background: rgba(255, 241, 241, 0.672);
       height: 30px;
+
       border-radius: 5px;
     }
     button {
       border: none;
+      color: white;
       padding: 0px 10px;
+      cursor: pointer;
       border-radius: 5px;
+      background: rgb(151, 167, 255);
     }
   }
   .todo-listjob {
