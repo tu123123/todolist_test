@@ -13,6 +13,7 @@ To Do List application developed for task management.
  - Download project from Github: git clone https://github.com/tu123123/todolist_test.git
  - Open Terminal or Command Prompt
  - Install the dependencies: yarn
+ - Start the application: yarn start
 
 
 
