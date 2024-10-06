@@ -1,0 +1,20 @@
+.loading-container {
+  background: white;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  img {
+    height: 50px;
+    animation: loading 1s infinite linear;
+  }
+}
+@keyframes loading {
+  0% {
+    transform: rotate(360deg);
+  }
+}

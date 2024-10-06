@@ -1,0 +1,89 @@
+.todo-content {
+  background-color: rgb(108 126 226);
+  width: 500px;
+  height: 600px;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  grid-auto-columns: 1fr;
+  max-width: 100vw;
+  padding: 10px;
+  max-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content max-content 1fr;
+  justify-content: center;
+  .todo-filter {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 5px;
+    grid-column: auto/ span 2;
+  }
+  .todo-addinput {
+    border-bottom: 1px rgb(255, 148, 148) solid;
+
+    display: grid;
+    justify-items: center;
+
+    grid-template-columns: 1fr max-content;
+    gap: 10px;
+    padding: 20px 20px;
+    .todo-input {
+      border: none;
+      font-size: 20px;
+      width: 100%;
+      outline: none;
+      padding-left: 10px;
+      background: rgb(255, 220, 220);
+      height: 30px;
+      border-radius: 5px;
+    }
+    button {
+      border: none;
+      padding: 0px 10px;
+      border-radius: 5px;
+    }
+  }
+  .todo-listjob {
+    display: flex;
+    overflow: auto;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+
+    width: 100%;
+    flex-wrap: wrap;
+    grid-template-rows: auto;
+  }
+  .todo-listjob-i {
+    width: 80%;
+    background-color: rgb(65, 83, 197);
+    display: grid;
+    border-radius: 10px;
+    grid-template-columns: 50px 1fr;
+    padding: 10px;
+    align-items: center;
+    margin-top: 10px;
+    input {
+      height: 20px;
+    }
+    div {
+      word-break: break-all;
+      text-align: left;
+    }
+  }
+}
+.todo-container {
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: rgb(146 185 228);
+}
+.success {
+  background: rgb(251 162 208) !important;
+  text-decoration: line-through;
+}
